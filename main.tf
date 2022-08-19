@@ -1,5 +1,6 @@
 # main Terraform file
-# Purpose is to deploy a Resource Group
+# Purpose is to deploy a Resource Group to test deployments using TF Cloud
+# This is not a Azure lab!
 # NZDR, May 2022
 
 terraform {
@@ -21,7 +22,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   location = var.location
 
   tags = {
-    DeployedUsing = "Terraform"
+    DeployedUsing = "TF Cloud"
   }
 }
 
