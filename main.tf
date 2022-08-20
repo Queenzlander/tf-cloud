@@ -27,6 +27,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
 
   tags = {
     DeployedUsing = "TF Cloud"
+    AutoUpdate    = "enabled"
   }
 }
 
